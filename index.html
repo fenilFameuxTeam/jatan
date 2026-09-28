@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jatan Loan Adviser | Loan in 60 Minutes on Aadhaar & PAN</title>
+<meta name="description" content="Jatan Loan Adviser - 20+ years experience. All types of loans on just Aadhaar card and PAN card. Get loan within 60 minutes.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070d1c;--soft:#0d1630;--card:#121d3a;--deep:#0f2a66;--navy:#f3f7ff;--blue:#5b9dff;--orange:#ff8a2b;--text:#dbe4f5;--mute:#93a4c4;--line:#24345f;--wa:#22c55e;color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:auto;padding:0 20px}
+h1,h2,h3{color:var(--navy);line-height:1.25}
+.topbar{background:var(--deep);color:#fff;font-size:.82rem;text-align:center;padding:7px 10px}
+.topbar b{color:#ffd28a}
+header{position:sticky;top:0;z-index:50;background:#070d1ccc;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-weight:800;font-size:1.2rem;color:var(--navy)}
+.logo span{color:var(--orange)}
+.nav-links{display:flex;gap:22px;font-size:.9rem;font-weight:500;color:var(--mute)}
+.nav-links a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:12px;font-weight:600;font-size:.95rem;border:0;cursor:pointer;transition:.2s;font-family:inherit}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 18px #0007}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-or{background:var(--orange);color:#fff}
+.btn-line{border:2px solid var(--blue);color:var(--blue);background:var(--card)}
+.hero{background:linear-gradient(180deg,var(--soft),var(--bg));padding:60px 0 50px}
+.hero-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center}
+.tag{display:inline-block;background:var(--card);color:var(--blue);border:1px solid var(--line);padding:6px 14px;border-radius:50px;font-size:.82rem;font-weight:600;margin-bottom:16px}
+.hero h1{font-size:clamp(1.9rem,4.6vw,3.1rem);font-weight:800;margin-bottom:16px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p{color:var(--mute);max-width:520px;margin-bottom:22px}
+.ticks{display:flex;flex-wrap:wrap;gap:8px 18px;margin-bottom:24px;font-weight:500;font-size:.9rem}
+.ticks span::before{content:"✔ ";color:var(--wa)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 18px 40px #0008;text-align:center}
+.panel .big{font-size:3.4rem;font-weight:800;color:var(--orange);line-height:1}
+.panel .big small{font-size:1.2rem;color:var(--navy)}
+.docs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+.doc{background:var(--soft);border-radius:14px;padding:14px;font-weight:600;color:var(--navy);font-size:.9rem}
+.doc span{display:block;font-size:1.8rem}
+.stats{background:var(--deep);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);text-align:center;padding-block:24px;gap:10px}
+.stats b{display:block;font-size:1.7rem;color:#ffd28a}
+.stats span{font-size:.85rem;opacity:.85}
+section{padding:64px 0}
+.alt{background:var(--soft)}
+.title{text-align:center;margin-bottom:36px}
+.title h2{font-size:clamp(1.6rem,3.6vw,2.3rem);font-weight:800}
+.title h2 em{font-style:normal;color:var(--orange)}
+.title p{color:var(--mute)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;transition:.25s}
+.card .ic{font-size:2rem;margin-bottom:6px}
+.card h3{font-size:1rem;margin-bottom:2px}
+.card p{font-size:.85rem;color:var(--mute)}
+.loan{cursor:pointer}
+.loan:hover{transform:translateY(-5px);border-color:var(--blue);box-shadow:0 12px 26px #1f5fd622}
+.loan::after{content:"Ask on WhatsApp →";display:block;margin-top:10px;font-size:.78rem;font-weight:600;color:var(--wa)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:var(--card);border-radius:18px;padding:30px 22px 22px;position:relative;border:1px solid var(--line)}
+.step .n{position:absolute;top:-18px;left:20px;background:var(--orange);color:#fff;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-weight:800}
+.step p{color:var(--mute);font-size:.9rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.box h3{margin-bottom:12px;font-size:1.2rem}
+.box ul{list-style:none;display:grid;gap:9px;font-size:.92rem}
+.box li::before{content:"✔ ";color:var(--wa);font-weight:700}
+.emi label{font-size:.85rem;font-weight:600;color:var(--navy);display:flex;justify-content:space-between;margin-top:12px}
+.emi input[type=range]{width:100%;accent-color:var(--orange)}
+.emi .res{margin-top:18px;background:var(--soft);border-radius:14px;padding:16px;text-align:center}
+.emi .res b{display:block;font-size:2rem;color:var(--blue)}
+.emi .res small{color:var(--mute)}
+.reels{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.reel{aspect-ratio:9/16;background:#000;border-radius:18px;overflow:hidden;border:3px solid var(--line);box-shadow:0 10px 24px #0007}
+.reel video{width:100%;height:100%;object-fit:cover}
+.empty{grid-column:1/-1;text-align:center;color:var(--mute);border:2px dashed var(--line);background:var(--card);border-radius:16px;padding:34px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 20px;margin-bottom:10px}
+summary{font-weight:600;color:var(--navy);cursor:pointer}
+details p{margin-top:8px;color:var(--mute);font-size:.92rem}
+.contact-box{display:grid;grid-template-columns:1fr 1fr;gap:30px;background:linear-gradient(135deg,var(--deep),#1b3f95);color:#fff;border-radius:26px;padding:38px}
+.contact-box h2{color:#fff;font-size:2rem;margin-bottom:8px}
+.big-phone{text-shadow:0 0 18px #ffd28a55;font-size:1.9rem;font-weight:800;color:#ffd28a;display:block;margin:8px 0 18px}
+form{display:grid;gap:12px;background:var(--card);padding:22px;border-radius:18px}
+input,select{background:var(--soft);width:100%;padding:13px 14px;border-radius:10px;border:1.5px solid var(--line);font:inherit;color:var(--text)}
+input:focus,select:focus{outline:none;border-color:var(--blue)}
+footer{text-align:center;padding:26px 20px 90px;color:var(--mute);font-size:.82rem}
+.fab{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;flex-direction:column;gap:10px}
+.fab a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 8px 22px #0003}
+.fab .w{background:var(--wa);animation:pulse 2s infinite}
+.fab .c{background:var(--orange)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #1faa5977}100%{box-shadow:0 0 0 18px #1faa5900}}
+
+/* ===== animations ===== */
+.hero{position:relative;overflow:hidden}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;z-index:0;animation:drift 12s ease-in-out infinite alternate}
+.hero::before{width:380px;height:380px;background:#1f5fd6;top:-100px;left:-80px}
+.hero::after{width:320px;height:320px;background:#ff8a2b;bottom:-120px;right:-60px;animation-delay:-6s}
+.hero-grid{position:relative;z-index:1}
+@keyframes drift{to{transform:translate(70px,50px) scale(1.2)}}
+.hero h1 em{background:linear-gradient(90deg,#ff8a2b,#ffd28a,#ff8a2b);background-size:200% auto;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:shine 4s linear infinite}
+@keyframes shine{to{background-position:200% center}}
+.hero-grid>div:first-child>*{animation:up .8s both}
+.hero-grid>div:first-child>*:nth-child(2){animation-delay:.12s}.hero-grid>div:first-child>*:nth-child(3){animation-delay:.24s}
+.hero-grid>div:first-child>*:nth-child(4){animation-delay:.36s}.hero-grid>div:first-child>*:nth-child(5){animation-delay:.48s}
+@keyframes up{from{opacity:0;transform:translateY(30px)}}
+.panel{animation:bob 4s ease-in-out infinite;box-shadow:0 0 0 1px var(--line),0 20px 50px #0009,0 0 60px #1f5fd633}
+@keyframes bob{50%{transform:translateY(-12px)}}
+.doc{animation:pop 2.4s ease-in-out infinite}.doc:nth-child(2){animation-delay:1.2s}
+@keyframes pop{50%{transform:scale(1.06);background:#1b2c58}}
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(90deg,transparent,#ffffff55,transparent);transform:skewX(-20deg);animation:sweep 3.2s infinite}
+@keyframes sweep{to{left:160%}}
+.hero .btn-wa{animation:ring 2s infinite}
+@keyframes ring{0%{box-shadow:0 0 0 0 #22c55e88}100%{box-shadow:0 0 0 16px #22c55e00}}
+.ticker{overflow:hidden;background:var(--soft);border-bottom:1px solid var(--line);padding:12px 0}
+.track{display:flex;gap:38px;width:max-content;animation:scroll 32s linear infinite;font-weight:600;color:var(--mute);white-space:nowrap}
+.track span{color:var(--text)}.track b{color:var(--orange);margin-left:38px}
+.ticker:hover .track{animation-play-state:paused}
+@keyframes scroll{to{transform:translateX(-50%)}}
+.card .ic{display:inline-block;transition:.3s}.card:hover .ic{transform:scale(1.25) rotate(-8deg);animation:none}
+.card:hover{border-color:var(--blue)}
+.step .n{animation:ring2 2.5s infinite}
+@keyframes ring2{0%{box-shadow:0 0 0 0 #ff8a2b88}100%{box-shadow:0 0 0 14px #ff8a2b00}}
+.rv{opacity:0;transform:translateY(34px) scale(.97);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.reel{animation:up .7s both}
+.fab .c{animation:wob 3s ease-in-out infinite}
+@keyframes wob{0%,80%,100%{transform:rotate(0)}85%{transform:rotate(-14deg)}90%{transform:rotate(14deg)}95%{transform:rotate(-10deg)}}
+details{transition:.25s}details[open]{border-color:var(--blue);box-shadow:0 0 24px #5b9dff22}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+@media(max-width:820px){.hero-grid,.contact-box,.steps,.two{grid-template-columns:1fr}.nav-links{display:none}.stats .wrap{grid-template-columns:repeat(2,1fr)}}
+</style></head>
+<body>
+<div class="topbar">⚡ Loan only on <b>Aadhaar + PAN</b> • Get money within <b>60 minutes</b> • 📞 9913507626</div>
+<header><div class="wrap nav">
+  <a href="#" class="logo">Jatan <span>Loan Adviser</span></a>
+  <nav class="nav-links"><a href="#why">Why Us</a><a href="#loans">Loans</a><a href="#emi">EMI Calculator</a><a href="#videos">Videos</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
+  <a class="btn btn-wa" href="#" data-wa>💬 WhatsApp</a>
+</div></header>
+
+<div class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="tag">⭐ 20+ Years of Trusted Experience</span>
+    <h1>Get a loan on just <em>Aadhaar Card</em> &amp; <em>PAN Card</em> — within <em>60 Minutes!</em></h1>
+    <p>Jatan Loan Adviser helps you get the right loan quickly and easily. No long paperwork and no running from bank to bank — we guide you at every step.</p>
+    <div class="ticks"><span>Only 2 documents</span><span>Fast approval</span><span>All loan types</span><span>Honest guidance</span></div>
+    <div class="cta">
+      <a class="btn btn-wa" href="#" data-wa>💬 Apply on WhatsApp</a>
+      <a class="btn btn-line" href="tel:+919913507626">📞 Call 9913507626</a>
+    </div>
+  </div>
+  <div class="panel">
+    <div style="font-weight:600;color:var(--mute)">Your loan in just</div>
+    <div class="big"><span id="cnt">60</span> <small>minutes</small></div>
+    <div class="docs"><div class="doc"><span>🪪</span>Aadhaar Card</div><div class="doc"><span>💳</span>PAN Card</div></div>
+    <a class="btn btn-or" style="width:100%;margin-top:18px" href="#contact">Check My Loan →</a>
+  </div>
+</div></div>
+
+<div class="stats"><div class="wrap">
+  <div><b>20+</b><span>Years Experience</span></div>
+  <div><b>60 Min</b><span>Quick Process</span></div>
+  <div><b>2 Docs</b><span>Aadhaar + PAN</span></div>
+  <div><b>All</b><span>Types of Loans</span></div>
+</div></div>
+
+<div class="ticker"><div class="track" id="track"></div></div>
+
+<section id="why"><div class="wrap">
+  <div class="title"><h2>Why choose <em>Jatan Loan Adviser</em>?</h2><p>Experience you can trust, service you can feel</p></div>
+  <div class="cards">
+    <div class="card"><div class="ic">🏆</div><h3>20+ Years Experience</h3><p>Two decades of helping families and businesses get loans.</p></div>
+    <div class="card"><div class="ic">⚡</div><h3>Approval in 60 Minutes</h3><p>Fast process so you get money when you need it.</p></div>
+    <div class="card"><div class="ic">📄</div><h3>Minimum Documents</h3><p>Just Aadhaar and PAN card to get started.</p></div>
+    <div class="card"><div class="ic">🤝</div><h3>Personal Guidance</h3><p>We explain everything in simple words — no hidden confusion.</p></div>
+    <div class="card"><div class="ic">💼</div><h3>Every Loan Type</h3><p>Personal, home, business, vehicle and more under one roof.</p></div>
+    <div class="card"><div class="ic">💬</div><h3>Easy WhatsApp Support</h3><p>Send documents and ask questions anytime on WhatsApp.</p></div>
+  </div>
+</div></section>
+
+<section id="loans" class="alt"><div class="wrap">
+  <div class="title"><h2>We do <em>all types</em> of loans</h2><p>Tap any loan to ask us on WhatsApp</p></div>
+  <div class="cards" id="loanGrid"></div>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <div class="title"><h2>Simple <em>3-step</em> process</h2></div>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><h3>Send Aadhaar &amp; PAN</h3><p>Share your two documents on WhatsApp or visit us.</p></div>
+    <div class="step"><div class="n">2</div><h3>We check &amp; match</h3><p>With 20+ years of experience, we choose the best loan for you.</p></div>
+    <div class="step"><div class="n">3</div><h3>Get loan in 60 min</h3><p>Quick processing so the money reaches you fast.</p></div>
+  </div>
+</div></section>
+
+<section class="alt"><div class="wrap two">
+  <div class="box"><h3>📋 What you need</h3>
+    <ul><li>Aadhaar Card</li><li>PAN Card</li><li>Mobile number linked with Aadhaar</li><li>Your loan amount &amp; purpose</li></ul>
+    <p style="margin-top:14px;font-size:.82rem;color:var(--mute)">Final approval and any extra document depend on the lender and your eligibility.</p></div>
+  <div class="box"><h3>🎯 Who can apply?</h3>
+    <ul><li>Salaried people</li><li>Business owners &amp; shopkeepers</li><li>Self-employed &amp; professionals</li><li>Families buying home, car or bike</li><li>Students needing education loan</li></ul></div>
+</div></section>
+
+<section id="emi"><div class="wrap two">
+  <div class="box emi">
+    <h3>🧮 EMI Calculator</h3>
+    <label>Loan amount <b id="vA"></b></label><input type="range" id="rA" min="10000" max="5000000" step="10000" value="500000">
+    <label>Interest rate (% per year) <b id="vR"></b></label><input type="range" id="rR" min="6" max="36" step="0.5" value="14">
+    <label>Tenure (months) <b id="vT"></b></label><input type="range" id="rT" min="6" max="240" step="6" value="36">
+    <div class="res"><small>Your monthly EMI (approx.)</small><b id="emi"></b><small id="tot"></small></div>
+  </div>
+  <div style="display:flex;flex-direction:column;justify-content:center">
+    <h2 style="font-size:2rem;margin-bottom:10px">Know your EMI <span style="color:var(--orange)">before you apply</span></h2>
+    <p style="color:var(--mute);margin-bottom:18px">Move the sliders to plan your loan. The actual rate and EMI depend on the lender — talk to us for exact details.</p>
+    <a class="btn btn-wa" href="#" data-wa style="align-self:flex-start">💬 Get exact offer on WhatsApp</a>
+  </div>
+</div></section>
+
+<section class="alt" id="videos"><div class="wrap">
+  <div class="title"><h2>See our <em>business</em> in action</h2><p>Real videos from our Instagram</p></div>
+  <div class="reels" id="reels"><div class="empty">Loading videos…</div></div>
+</div></section>
+
+<section id="faq"><div class="wrap" style="max-width:800px">
+  <div class="title"><h2>Common <em>questions</em></h2></div>
+  <details><summary>Can I really get a loan with only Aadhaar and PAN?</summary><p>Yes, we start your process with just these two documents. If the lender needs anything extra, we will tell you clearly.</p></details>
+  <details><summary>How fast will I get the loan?</summary><p>Our aim is to get you the loan within 60 minutes. Timing can vary with lender and your eligibility.</p></details>
+  <details><summary>Which loans do you arrange?</summary><p>All types — personal, home, business, car, two-wheeler, property, education, gold, MSME, balance transfer and more.</p></details>
+  <details><summary>How do I apply?</summary><p>Tap the WhatsApp button, send your Aadhaar and PAN, and tell us the amount you need. Or call 9913507626.</p></details>
+</div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap">
+  <div class="contact-box">
+    <div>
+      <h2>Get your loan today</h2>
+      <p style="opacity:.85">Call or WhatsApp us now:</p>
+      <a class="big-phone" href="tel:+919913507626">📞 9913507626</a>
+      <div class="cta"><a class="btn btn-wa" href="#" data-wa>💬 WhatsApp Now</a><a class="btn btn-or" href="tel:+919913507626">Call Now</a></div>
+    </div>
+    <form id="form">
+      <input id="fn" placeholder="Your name" required>
+      <select id="ft"></select>
+      <input id="fa" type="number" placeholder="Loan amount needed (₹)">
+      <button class="btn btn-wa" type="submit">Send on WhatsApp →</button>
+    </form>
+  </div>
+</div></section>
+
+<footer><b style="color:var(--navy)">Jatan Loan Adviser</b> • 20+ Years Experience • 9913507626<br>© <span id="yr"></span> All rights reserved. Loan approval is subject to lender terms &amp; eligibility.</footer>
+
+<div class="fab"><a class="w" href="#" data-wa aria-label="WhatsApp">💬</a><a class="c" href="tel:+919913507626" aria-label="Call">📞</a></div>
+
+<script>
+const PHONE="919913507626";
+const wa=(t)=>`https://wa.me/${PHONE}?text=${encodeURIComponent(t)}`;
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href=wa("Hello Jatan Loan Adviser, I need a loan. Please help.");a.target="_blank";a.rel="noopener"});
+document.getElementById('yr').textContent=new Date().getFullYear();
+const LOANS=[["👤","Personal Loan","Quick cash for any need"],["🏠","Home Loan","Buy or build your dream home"],["🏢","Business Loan","Grow your business"],["🚗","Car Loan","New & used cars"],["🏍️","Two-Wheeler Loan","Bikes & scooters"],["🏘️","Loan Against Property","High amount, low interest"],["🎓","Education Loan","Study in India or abroad"],["🪙","Gold Loan","Instant against gold"],["🏭","MSME / Machinery Loan","For small industries"],["🔁","Balance Transfer","Lower your EMI"],["💳","Credit Card","Apply with ease"],["➕","Top-up & Other Loans","Ask us anything"]];
+const grid=document.getElementById('loanGrid'),sel=document.getElementById('ft');
+LOANS.forEach(([i,n,d])=>{
+  grid.insertAdjacentHTML('beforeend',`<div class="card loan" data-n="${n}"><div class="ic">${i}</div><h3>${n}</h3><p>${d}</p></div>`);
+  sel.insertAdjacentHTML('beforeend',`<option>${n}</option>`);
+});
+grid.addEventListener('click',e=>{const c=e.target.closest('.loan');if(c)window.open(wa(`Hello, I need a ${c.dataset.n}. Please help.`),'_blank')});
+document.getElementById('form').addEventListener('submit',e=>{e.preventDefault();
+  const a=document.getElementById('fa').value;
+  window.open(wa(`Hello Jatan Loan Adviser,\nName: ${fn.value}\nLoan: ${ft.value}\nAmount: ₹${a||'-'}`),'_blank')});
+/* EMI */
+const $=id=>document.getElementById(id),inr=n=>'₹'+Math.round(n).toLocaleString('en-IN');
+function calc(){const P=+rA.value,r=+rR.value/1200,n=+rT.value;
+  const e=P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
+  vA.textContent=inr(P);vR.textContent=rR.value+'%';vT.textContent=n;
+  emi.textContent=inr(e);tot.textContent='Total payment: '+inr(e*n)}
+['rA','rR','rT'].forEach(i=>$(i).addEventListener('input',calc));calc();
+
+/* ticker + count-up + scroll reveal */
+$('track').innerHTML=[...LOANS,...LOANS].map(l=>`<span>${l[0]} ${l[1]}</span><b>•</b>`).join('');
+(function(){const el=$('cnt');let t0;const step=t=>{t0=t0||t;const p=Math.min((t-t0)/1400,1);el.textContent=Math.round(60*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(step)};requestAnimationFrame(step)})();
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);setTimeout(()=>{e.target.classList.remove('rv','in');e.target.style.transitionDelay=''},1600)}}),{threshold:.12});
+document.querySelectorAll('.title,.card,.step,.box,details,.contact-box').forEach(el=>{
+  const i=[...el.parentElement.children].indexOf(el);el.style.transitionDelay=Math.min(i,8)*70+'ms';el.classList.add('rv');io.observe(el)});
+/* ---- AUTO VIDEO LOADER (reads the videos/ folder) ---- */
+const VID=/\.(mp4|webm|mov|m4v|ogv)$/i, reels=document.getElementById('reels');
+const clean=l=>[...new Set(l)].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+async function fromListing(){ // works when server shows folder listing
+  try{const r=await fetch('videos/');if(!r.ok)return[];
+    const d=new DOMParser().parseFromString(await r.text(),'text/html');
+    return [...d.querySelectorAll('a')].map(a=>decodeURIComponent((a.getAttribute('href')||'').split('/').pop())).filter(h=>VID.test(h));}catch(e){return[]}
+}
+async function fromManifest(){ // optional videos/videos.json = ["a.mp4","b.mp4"]
+  try{const r=await fetch('videos/videos.json');if(!r.ok)return[];const j=await r.json();return j.filter(x=>VID.test(x))}catch(e){return[]}
+}
+function probe(src){return new Promise(res=>{const v=document.createElement('video');v.preload='metadata';v.onloadedmetadata=()=>res(true);v.onerror=()=>res(false);v.src=src})}
+async function fromNumbered(){ // video1.mp4, video2.mp4 ...
+  const out=[];let miss=0;
+  for(let i=1;i<=60&&miss<3;i++){const n=`video${i}.mp4`;if(await probe('videos/'+n)){out.push(n);miss=0}else miss++}
+  return out;
+}
+(async()=>{
+  let f=await fromListing(); if(!f.length)f=await fromManifest(); if(!f.length)f=await fromNumbered();
+  f=clean(f);
+  if(!f.length){reels.innerHTML='<div class="empty">🎬 Videos coming soon.<br><small>Put your videos in the <b>videos</b> folder.</small></div>';return}
+  reels.innerHTML='';
+  f.forEach(n=>reels.insertAdjacentHTML('beforeend',`<div class="reel"><video src="videos/${encodeURIComponent(n)}#t=0.5" controls playsinline preload="metadata"></video></div>`));
+  reels.addEventListener('play',e=>{reels.querySelectorAll('video').forEach(v=>{if(v!==e.target)v.pause()})},true);
+})();
+</script>
+</body>
+</html>
