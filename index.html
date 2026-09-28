@@ -283,6 +283,15 @@ document.querySelectorAll('.title,.card,.step,.box,details,.contact-box').forEac
 /* ---- AUTO VIDEO LOADER (reads the videos/ folder) ---- */
 const VID=/\.(mp4|webm|mov|m4v|ogv)$/i, reels=document.getElementById('reels');
 const clean=l=>[...new Set(l)].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
+/* GitHub Pages: no folder listing there, so ask the GitHub API which files are in /videos */
+const GH={user:'',repo:''}; // only fill these if you use a custom domain
+async function fromGitHub(){
+  try{let u=GH.user,r=GH.repo;const h=location.hostname;
+    if(!u&&h.endsWith('.github.io')){u=h.split('.')[0];r=location.pathname.split('/')[1]||h}
+    if(!u||!r)return[];
+    const res=await fetch(`https://api.github.com/repos/${u}/${r}/contents/videos`);if(!res.ok)return[];
+    return (await res.json()).filter(x=>x.type==='file'&&VID.test(x.name)).map(x=>x.name);}catch(e){return[]}
+}
 async function fromListing(){ // works when server shows folder listing
   try{const r=await fetch('videos/');if(!r.ok)return[];
     const d=new DOMParser().parseFromString(await r.text(),'text/html');
@@ -298,7 +307,7 @@ async function fromNumbered(){ // video1.mp4, video2.mp4 ...
   return out;
 }
 (async()=>{
-  let f=await fromListing(); if(!f.length)f=await fromManifest(); if(!f.length)f=await fromNumbered();
+  let f=await fromGitHub(); if(!f.length)f=await fromListing(); if(!f.length)f=await fromManifest(); if(!f.length)f=await fromNumbered();
   f=clean(f);
   if(!f.length){reels.innerHTML='<div class="empty">🎬 Videos coming soon.<br><small>Put your videos in the <b>videos</b> folder.</small></div>';return}
   reels.innerHTML='';
